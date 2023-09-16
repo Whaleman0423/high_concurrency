@@ -4,7 +4,7 @@ FROM nginx:latest
 # 將 Flutter build 的內容複製到 Nginx 的默認目錄
 COPY web/ /usr/share/nginx/html/
 
-# 使容器聽8080端口（你可以選擇其他端口，但需要相應地更新 Nginx 配置）
+# 使容器聽80端口（你可以選擇其他端口，但需要相應地更新 Nginx 配置）
 EXPOSE 80
 
 # 使用自訂的 Nginx 配置（可選，如果你需要自訂配置的話）
