@@ -23,4 +23,4 @@ gcloud builds submit --tag asia-east1-docker.pkg.dev/<專案 id>/high-concurrenc
 ```
 
 ## 設定環境變數
-name: World
+name: YuRay

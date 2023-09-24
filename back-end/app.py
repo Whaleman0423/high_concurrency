@@ -1,11 +1,13 @@
 # 引入需要的模組
 import os
 from flask import Flask, request
+from flask_cors import CORS
 from google.cloud import firestore
 import uuid
 
 # 創建 Flask 應用實例
 app = Flask(__name__)
+CORS(app)
 
 # 定義根路由的處理函數，當用戶訪問 '/' 時，這個函數將被調用
 @app.route('/')
